@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet"
+    />
+    <head>
+        <title>Music App</title>
+    </head>
+    <body>
+        <div class="container">
+            <navbar class="navbar"> 
+                <img alt="logo" src="img/logo.svg"/>
+                <input type="text" placeholder="Search..." id="search" />
+                <a href="index.html">Home</a>
+                <div class="playlist">
+                    <a href="playlist.html">Playlist</a>
+                    <div class="dropdown-content">
+                        <a href="#">Playlist 1</a>
+                        <a href="#">Playlist 2</a>
+                        <a href="#">Playlist 3</a>
+                    </div>
+                </div>
+                <a href="">Settings</a>
+                <a href="">Help</a>
+                <a href="">Contact</a>
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Feedback</a>
+                <a href="">Support</a>
+                <a href="">About</a>
+            </navbar>
+            <h1>Music App</h1>
+            <p class="description">A simple music app</p>
+            <div class="button-container">
+                <button onclick="play()">Play</button>
+                <button onclick="pause()">Pause</button>
+                <button onclick="stop()">Stop</button>
+            </div>
+            <!-- <p class="credits">Created by <a href="github.com/deltaseconds">deltaseconds</a></p> -->
+        </div>
+        <!-- leave at bottom -->
+        <script src="main.js"></script>
+</html>
