@@ -10,12 +10,12 @@ body {
     left: 0;
     height: 100%;
     width: 200px;
-    background-color: #1e1e1e; 
-    color: aliceblue; 
-    overflow-y: auto; 
+    background-color: #1e1e1e;
+    color: aliceblue;
+    overflow-y: auto;
 }
 
-.navbar img {
+.navbar img.logo {
     width: 179px;
     height: auto;
     margin: 10px 0;
@@ -26,46 +26,46 @@ body {
     padding: 10px;
     margin: 10px auto;
     border-radius: 5px;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     margin-left: 5px;
     transition: all 0.3s ease-in-out;
 }
 
 .navbar input:focus {
     outline: none;
-    border-color: darkseagreen; 
+    border-color: darkseagreen;
     box-shadow: 0 0 5px darkseagreen;
     transform: scale(1.02);
 }
-
 
 .navbar a {
     display: block;
     padding-left: 20px;
     padding: 10px;
-    color: aliceblue; 
-    text-decoration: none; 
+    color: aliceblue;
+    text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
 .navbar a:hover {
-    background-color: #333; 
-    color: aliceblue; 
+    background-color: #333;
+    color: aliceblue;
 }
 
 .other-links a:hover {
-    background-color: #1a1a1a; 
-    color: aliceblue; 
+    background-color: #1a1a1a;
+    color: aliceblue;
     border-radius: 5px;
 }
 
 .other-links a {
     display: block;
-    color: aliceblue; 
-    text-decoration: none; 
+    color: aliceblue;
+    text-decoration: none;
     transition: all 0.3s ease-in-out;
     margin-top: 5px;
 }
+
 .other-links {
     transition: all 0.3s ease-in-out;
     width: 179px;
@@ -85,24 +85,57 @@ body {
     align-items: center;
     float: inline-start;
     margin-top: 20px;
-    padding: 10px; 
+    padding: 10px;
     transition: all 0.3s ease-in-out;
 }
 
 .credits:hover {
     transform: scale(1.02);
 }
+
 .credits:active {
     transform: scale(0.98);
 }
+
 .credits a {
-    color: aliceblue; 
-    text-decoration: none; 
+    color: aliceblue;
+    text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
+
 .credits a:hover {
-    color: darkseagreen; 
+    color: darkseagreen;
     font-weight: 700;
+}
+.profile {
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    bottom: 350px;
+    width: 179px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+.profile:hover {
+    background-color: #2e2e2e;
+}
+div.profile-link {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+div.profile-pic {
+    display: inline-block;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .container {
@@ -111,24 +144,20 @@ body {
     padding: 20px;
     flex-grow: 1;
     width: 100%;
-  height: 100vH;
+    height: 100vh;
 
-  background: #000000;
-  --gap: 5em;
-  --line: 1px;
-  --color: rgba(255, 255, 255, 0.2);
+    background: #000000;
+    --gap: 5em;
+    --line: 1px;
+    --color: rgba(255, 255, 255, 0.2);
 
-  background-image: linear-gradient(
-      -90deg,
-      transparent calc(var(--gap) - var(--line)),
-      var(--color) calc(var(--gap) - var(--line) + 1px),
-      var(--color) var(--gap)
-    ),
-    linear-gradient(
-      0deg,
-      transparent calc(var(--gap) - var(--line)),
-      var(--color) calc(var(--gap) - var(--line) + 1px),
-      var(--color) var(--gap)
-    );
-  background-size: var(--gap) var(--gap);
+    background-image: linear-gradient(-90deg,
+            transparent calc(var(--gap) - var(--line)),
+            var(--color) calc(var(--gap) - var(--line) + 1px),
+            var(--color) var(--gap)),
+        linear-gradient(0deg,
+            transparent calc(var(--gap) - var(--line)),
+            var(--color) calc(var(--gap) - var(--line) + 1px),
+            var(--color) var(--gap));
+    background-size: var(--gap) var(--gap);
 }
