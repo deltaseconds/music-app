@@ -29,6 +29,7 @@ body {
     border: 1px solid #ccc;
     margin-left: 5px;
     transition: all 0.3s ease-in-out;
+    background-color: aliceblue;
 }
 
 .navbar input:focus {
@@ -36,6 +37,15 @@ body {
     border-color: darkseagreen;
     box-shadow: 0 0 5px darkseagreen;
     transform: scale(1.02);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    margin-left: -20px;
+    height: 75px;
 }
 
 .navbar a {
@@ -56,6 +66,7 @@ body {
     background-color: #1a1a1a;
     color: aliceblue;
     border-radius: 5px;
+    font-size: 1.1rem;
 }
 
 .other-links a {
@@ -69,6 +80,7 @@ body {
 .other-links {
     transition: all 0.3s ease-in-out;
     width: 179px;
+    max-height: 375px;
     margin-top: 20px;
     padding: 10px;
     background-color: #2e2e2e;
@@ -107,36 +119,29 @@ body {
     color: darkseagreen;
     font-weight: 700;
 }
-.profile {
+
+.profile-container {
+    display: flex;
     align-items: center;
-    text-align: center;
-    margin: 20px auto;
+    gap: 20px;
     padding: 10px;
-    bottom: 350px;
-    width: 179px;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-}
-.profile:hover {
-    background-color: #2e2e2e;
-}
-div.profile-link {
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-    margin: auto;
+    max-width: 400px;
+    bottom: 375px;
+    position: fixed;
 }
 
-div.profile-pic {
-    display: inline-block;
-}
-
-.profile img {
+.profile-img {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
+    border-radius: 50%; 
+    object-fit: cover; 
 }
+
+.username {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 
 .container {
     color: aliceblue;

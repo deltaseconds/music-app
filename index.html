@@ -21,11 +21,9 @@
                     
                 </div>
             </div>
-            <div class="profile">
-                <img class="profile-pic" src="https://avatars.githubusercontent.com/u/60275031?v=4" alt="profile" />
-                <div class="profile-link">
-                    <a href="">deltaseconds</a>
-                </div>
+            <div class="profile-container">
+                <img src="https://avatars.githubusercontent.com/u/60275031?v=4" alt="Profile Picture" class="profile-img">
+                <span class="username">deltaseconds</span>
             </div>
             <div class="other-links">
                 <a href="">Settings</a>
@@ -41,9 +39,34 @@
         <div class="container">
             <h1>Music App</h1>
             <p class="description">A simple music app</p>
-            <p class="credits">Created by <a href="https://github.com/deltaseconds">deltaseconds</a></p>
+            <footer>
+                <div class="player">
+                    <div class="player-controls">
+                        <img src="img/cover.jpg" alt="Album Cover" class="cover" />
+                        <div class="track-info"></div>
+                            <h2 class="track-title">Track Title</h2>
+                            <p class="track-artist">Artist Name</p>
+                            <p class="track-album">Album Name</p>
+                        </div>
+                        <div class="track-progress">
+                            <span class="current-time">0:00</span>
+                            <input type="range" id="progress" min="0" max="100" value="0" />
+                            <span class="duration">3:45</span>
+                        </div>
+                        <button class="play musicbutton">Play</button>
+                        <button class="pause musicbutton">Pause</button>
+                        <button class="next musicbutton">Next</button>
+                        <button class="prev musicbutton">Previous</button>
+                    </div>
+                    <div class="volume-control">
+                        <label for="volume">Volume:</label>
+                        <input type="range" id="volume" min="0" max="100" value="50" />
+                    </div>
+
+                </div>
+            </footer>
+            <!-- <p class="credits">Created by <a href="https://github.com/deltaseconds">deltaseconds</a></p> -->
         </div>
-        
         <!-- leave at bottom -->
         <script src="main.js"></script>
     </body>
